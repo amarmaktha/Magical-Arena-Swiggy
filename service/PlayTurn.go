@@ -1,6 +1,6 @@
 package service
 
-// this func will play the turn of the players
+// this func will decide which player has to attack  and change the turn of player
 func (arena *Arena) PlayTurn() {
 	if arena.PlayerA.Health <= arena.PlayerB.Health {
 		arena.PerformAttack(arena.PlayerA, arena.PlayerB)
